@@ -1,0 +1,20 @@
+.link {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 2px;
+
+  color: var(--blue);
+  font-size: small;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 100%;
+  
+  transition: 300ms;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
+
+.link:hover {
+  border-color: var(--blue)
+}

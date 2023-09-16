@@ -1,0 +1,55 @@
+.root {
+  display: flex;
+  flex: 1;
+  padding: 2.5rem 2rem;
+  border-radius: 10px;
+  gap: 2rem;
+
+  background: var(--base-profile);
+}
+
+.root img {
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.root h1 {
+  color: var(--base-title);
+  font-size: 24px;
+  flex: 1;
+}
+
+.content p {
+  color: var(--base-text)
+}
+
+.tags {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.tags span {
+  color: var(--base-span)
+}
+
+.tags li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

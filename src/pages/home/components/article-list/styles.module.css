@@ -1,0 +1,58 @@
+.root {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  justify-content: space-between;
+  margin: 2rem 0 0 0;
+
+
+  list-style-type: none;
+}
+
+.item {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  height: 260px;
+  
+  border: 2px solid transparent;
+  transition: all;
+  transition-duration: 500ms;
+
+  cursor: pointer;
+
+  background-color: var(--base-post);
+  padding: 2rem 2.5rem;
+  border-radius: 8px;
+}
+
+.item:hover {
+  border-color: var(--base-label);
+}
+
+.item header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+
+.item header h1 {
+  flex: 1;
+  color: var(--base-title);
+  font-size: 20px;
+}
+
+.item time {
+  color: var(--base-span);
+  font-size: 14px;
+}
+
+.item p {
+  color: var(--base-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.link {
+  text-decoration: none;
+}

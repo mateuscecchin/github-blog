@@ -1,0 +1,14 @@
+.search h3 {
+  color: var(--base-subtitle)
+}
+
+.search span {
+  color: var(--base-span)
+}
+
+.search_header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 72px;
+  margin-bottom: 12px;
+}
