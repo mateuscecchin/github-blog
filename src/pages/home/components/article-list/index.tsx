@@ -1,12 +1,7 @@
 import { PropsWithChildren } from "react";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
-import {
-  differenceInDays,
-  differenceInHours,
-  formatHumanDate,
-  getTimeAgoAndHumanDate,
-} from "../../../../utils/date-utils";
+import { getTimeAgoAndHumanDate } from "../../../../utils/date-utils";
 import { Markdown } from "../../../../components/markdown";
 
 interface ItemProps {

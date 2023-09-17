@@ -1,4 +1,4 @@
-import { ComponentProps, PropsWithChildren } from "react";
+import { ComponentProps } from "react";
 import styles from "./styles.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
