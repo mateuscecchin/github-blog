@@ -4,7 +4,7 @@ import { Screen } from "../../components/screen";
 import { TextInput } from "../../components/text-input";
 import { useIssues, useUser } from "../../hooks/github";
 import styles from "./styles.module.css";
-import { FormEvent, useState } from "react";
+import { useState } from "react";
 
 export function Home() {
   const [filter, setFilter] = useState("");
