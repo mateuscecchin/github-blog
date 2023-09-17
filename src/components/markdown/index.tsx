@@ -1,17 +1,22 @@
 import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
-import { dracula } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { oneDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import ReactMarkdown from "react-markdown";
+import styles from "./styles.module.css";
 
 export function Markdown({ children }) {
   const MarkdownComponents: any = {
-    code({ node, inline, className, ...props }) {
+    code({ children, ...props }) {
       return (
-        <SyntaxHighlighter style={dracula} language="javascript" {...props} />
+        <SyntaxHighlighter style={oneDark} language="javascript" {...props}>
+          {children}
+        </SyntaxHighlighter>
       );
     },
   };
 
   return (
-    <ReactMarkdown components={MarkdownComponents}>{children}</ReactMarkdown>
+    <ReactMarkdown components={MarkdownComponents} className={styles.root}>
+      {children}
+    </ReactMarkdown>
   );
 }

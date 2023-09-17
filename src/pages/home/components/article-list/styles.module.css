@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 48% 48%;
   justify-content: space-between;
-  margin: 2rem 0 0 0;
+  margin: 2rem 0 2rem 0;
   gap: 2rem;
   
   list-style-type: none;
@@ -13,19 +13,16 @@
   gap: 1.5rem;
   flex-direction: column;
   height: 260px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-
-  
   border: 2px solid transparent;
   transition: all;
   transition-duration: 500ms;
-
+  
   cursor: pointer;
-
+  
   background-color: var(--base-post);
   padding: 2rem 2.5rem;
   border-radius: 8px;
+  overflow: hidden;
 }
 
 .item:hover {
@@ -50,9 +47,21 @@
   font-size: 14px;
 }
 
+.item div { 
+  overflow: hidden;
+}
+
 .item p {
   color: var(--base-text);
+  margin: 0;
+  white-space: pre-wrap;
+  overflow: hidden;
 }
+
+/* .item p:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+} */
 
 .link {
   text-decoration: none;

@@ -5,3 +5,38 @@
   margin: -6rem auto;
   max-width: 864px;
 }
+
+.blur {
+  flex: 1;
+  -webkit-box-shadow: -3px 19px 123px 8px rgba(20,88,156,0.87);
+  -moz-box-shadow: -3px 19px 123px 8px rgba(20,88,156,0.87);
+  box-shadow: -3px 19px 123px 8px rgba(20,88,156,0.87);
+}
+
+.cover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: var(--base-profile);
+  height: 19rem;
+}
+
+.cover img {
+  object-fit: cover;
+}
+
+.cover_logo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.cover_logo p {
+  font-size: x-large;
+  color: var(--blue);
+  font-family: 'Coda', cursive;
+}

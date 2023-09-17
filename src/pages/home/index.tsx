@@ -4,7 +4,7 @@ import { Screen } from "../../components/screen";
 import { TextInput } from "../../components/text-input";
 import { useIssues, useUser } from "../../hooks/github";
 import styles from "./styles.module.css";
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 
 export function Home() {
   const [filter, setFilter] = useState("");
@@ -27,6 +27,7 @@ export function Home() {
           <span>{pubs ?? 0}</span>
         </div>
         <TextInput
+          name="publish"
           placeholder="Buscar conteúdo"
           value={filter}
           onChange={(e) => setFilter(e.target.value)}
