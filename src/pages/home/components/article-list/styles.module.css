@@ -3,8 +3,8 @@
   grid-template-columns: 48% 48%;
   justify-content: space-between;
   margin: 2rem 0 0 0;
-
-
+  gap: 2rem;
+  
   list-style-type: none;
 }
 
@@ -13,6 +13,9 @@
   gap: 1.5rem;
   flex-direction: column;
   height: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
   
   border: 2px solid transparent;
   transition: all;
@@ -49,8 +52,6 @@
 
 .item p {
   color: var(--base-text);
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .link {

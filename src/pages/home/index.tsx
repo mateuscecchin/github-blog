@@ -24,7 +24,7 @@ export function Home() {
       <div className={styles.search}>
         <div className={styles.search_header}>
           <h3>Publicações</h3>
-          <span>{pubs || 0}</span>
+          <span>{pubs ?? 0}</span>
         </div>
         <TextInput
           placeholder="Buscar conteúdo"
@@ -44,8 +44,8 @@ export function Home() {
 function parsePubs(totalIssues: number) {
   const pubs =
     totalIssues == 1
-      ? `${totalIssues} publicação`
-      : `${totalIssues} publicações`;
+      ? `${totalIssues ?? 0} publicação`
+      : `${totalIssues ?? 0} publicações`;
 
   return pubs;
 }
