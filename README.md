@@ -6,6 +6,6 @@
 - Vite ⚡
 - React Markdown Ⓜ
 - React Syntax Highlighter ✨
-- Tanstack Query 🎊
+- Tanstack Query 🏖
 - Fontawesome 🏳
 - Github API 🐱
