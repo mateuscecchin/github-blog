@@ -8,3 +8,4 @@
 - React Syntax Highlighter ✨
 - Tanstack Query 🎊
 - Fontawesome 🏳
+- Github API 🐱
